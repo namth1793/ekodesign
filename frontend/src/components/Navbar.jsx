@@ -9,8 +9,9 @@ const navLinks = [
   {
     label: 'Dịch vụ', to: '#',
     children: [
-      { label: 'Thiết kế Logo', to: '/thiet-ke-logo' },
-      { label: 'Thiết kế Thương hiệu', to: '/thiet-ke-thuong-hieu' },
+      { label: 'Thiết kế Logo & Thương hiệu', to: '/thiet-ke-logo' },
+      { label: 'Xây dựng & Phát triển Thương hiệu', to: '/thiet-ke-thuong-hieu' },
+      { label: 'Hồ sơ Năng lực & In ấn', to: '/ho-so-nang-luc' },
     ]
   },
   { label: 'Liên hệ', to: '/lien-he' },

@@ -16,7 +16,7 @@ export default function ContactCTA() {
           <span className="text-accent">Thương Hiệu Của Bạn?</span>
         </h2>
         <p className="text-white/70 text-lg mb-10 max-w-xl mx-auto">
-          Hơn 5.000 doanh nghiệp đã tin tưởng EkoDesign. Hãy là khách hàng tiếp theo của chúng tôi.
+          Thiết kế logo, xây dựng thương hiệu hay in ấn hồ sơ năng lực – Eko đồng hành cùng bạn từ đầu đến cuối.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <Link to="/lien-he" className="bg-accent text-white font-bold px-8 py-4 rounded-lg hover:bg-amber-500 transition-colors text-lg">

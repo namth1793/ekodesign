@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import GioiThieu from './pages/GioiThieu';
 import ThietKeLogo from './pages/ThietKeLogo';
 import ThietKeThuongHieu from './pages/ThietKeThuongHieu';
+import HoSoNangLuc from './pages/HoSoNangLuc';
 import LienHe from './pages/LienHe';
 
 function ScrollToTop() {
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/gioi-thieu" element={<GioiThieu />} />
         <Route path="/thiet-ke-logo" element={<ThietKeLogo />} />
         <Route path="/thiet-ke-thuong-hieu" element={<ThietKeThuongHieu />} />
+        <Route path="/ho-so-nang-luc" element={<HoSoNangLuc />} />
         <Route path="/lien-he" element={<LienHe />} />
       </Routes>
       <Footer />

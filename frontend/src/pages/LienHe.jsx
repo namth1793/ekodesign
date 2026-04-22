@@ -4,10 +4,10 @@ import api from '../api';
 const SERVICES = [
   'Thiết kế Logo',
   'Thiết kế Nhận diện Thương hiệu',
-  'Thiết kế Bao bì',
+  'Xây dựng & Phát triển Thương hiệu',
+  'Hồ sơ Năng lực (Company Profile)',
+  'In ấn Ấn phẩm Doanh nghiệp',
   'Namecard & Văn phòng phẩm',
-  'Thiết kế Website',
-  'Đăng ký Bản quyền Logo',
   'Khác',
 ];
 

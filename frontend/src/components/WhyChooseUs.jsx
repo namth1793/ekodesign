@@ -1,33 +1,33 @@
 const reasons = [
   {
     icon: '🏆',
-    title: 'Hơn 5.000 khách hàng tin tưởng',
-    desc: 'Chúng tôi đã thành công cùng hàng nghìn doanh nghiệp từ startup đến tập đoàn lớn trên toàn quốc.',
+    title: 'Hơn 500 khách hàng tin tưởng',
+    desc: 'Chúng tôi đã đồng hành cùng hàng trăm doanh nghiệp từ startup đến công ty lớn trong việc xây dựng và phát triển thương hiệu.',
   },
   {
     icon: '🎓',
-    title: 'Designer được đào tạo bài bản',
-    desc: 'Đội ngũ thiết kế tốt nghiệp từ các trường mỹ thuật uy tín, có kinh nghiệm thực chiến nhiều năm.',
+    title: 'Đội ngũ chuyên nghiệp, bài bản',
+    desc: 'Designer và chuyên gia thương hiệu được đào tạo bài bản, có nhiều năm kinh nghiệm thực chiến trong ngành thiết kế và branding.',
   },
   {
-    icon: '👥',
-    title: 'Nhóm 4+ designer mỗi dự án',
-    desc: 'Mỗi dự án có ít nhất 4 designer và 1 creative director phụ trách, đảm bảo chất lượng tốt nhất.',
+    icon: '🖨️',
+    title: 'Thiết kế – In ấn trọn gói',
+    desc: 'Cung cấp dịch vụ trọn gói từ thiết kế đến in ấn hồ sơ năng lực, profile, namecard và các ấn phẩm doanh nghiệp.',
   },
   {
     icon: '♾️',
-    title: 'Sửa đổi không giới hạn',
+    title: 'Chỉnh sửa không giới hạn',
     desc: 'Cam kết chỉnh sửa cho đến khi bạn 100% hài lòng với thiết kế, không phát sinh chi phí thêm.',
   },
   {
-    icon: '🛡️',
-    title: 'Bảo hộ bản quyền độc quyền',
-    desc: 'Hỗ trợ đăng ký nhãn hiệu độc quyền tại Cục Sở hữu trí tuệ, bảo vệ tài sản thương hiệu cho bạn.',
+    icon: '📋',
+    title: 'Tư vấn chiến lược thương hiệu',
+    desc: 'Không chỉ thiết kế đẹp – chúng tôi tư vấn chiến lược định vị và phát triển thương hiệu phù hợp với ngành nghề và thị trường mục tiêu.',
   },
   {
-    icon: '📍',
-    title: 'Văn phòng tại Hà Nội & TP.HCM',
-    desc: 'Đội ngũ tư vấn sẵn sàng gặp mặt trực tiếp tại 2 văn phòng ở cả 2 miền Nam – Bắc.',
+    icon: '⚡',
+    title: 'Tiến độ nhanh, đúng hạn',
+    desc: 'Quy trình làm việc chuyên nghiệp, đảm bảo bàn giao đúng hạn và đáp ứng mọi yêu cầu khẩn cấp của doanh nghiệp.',
   },
 ];
 
@@ -37,9 +37,9 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-14">
           <span className="text-accent font-semibold text-sm uppercase tracking-widest">Tại sao chọn chúng tôi?</span>
-          <h2 className="section-title mt-2">6 Lý Do Doanh Nghiệp Tin Tưởng EkoDesign</h2>
+          <h2 className="section-title mt-2">6 Lý Do Doanh Nghiệp Tin Tưởng Eko</h2>
           <p className="section-sub">
-            Chúng tôi không chỉ tạo ra logo đẹp – chúng tôi xây dựng nền tảng thương hiệu bền vững cho doanh nghiệp của bạn.
+            Chúng tôi không chỉ thiết kế logo – chúng tôi xây dựng thương hiệu bền vững và cung cấp giải pháp truyền thông tổng thể.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
