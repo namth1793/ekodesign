@@ -7,14 +7,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-white font-black text-xl">E</span>
-              </div>
-              <div>
-                <div className="font-black text-white text-lg">Eko</div>
-                <div className="text-xs text-white/40 tracking-widest uppercase">Design Studio</div>
-              </div>
+            <div className="mb-4">
+              <img src="/logo.jpg" alt="Eko Design" className="h-14 w-auto object-contain rounded-lg" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
               Dịch vụ xây dựng & phát triển thương hiệu – Thiết kế logo & thương hiệu – Thiết kế & in ấn hồ sơ năng lực chuyên nghiệp.

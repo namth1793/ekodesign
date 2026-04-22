@@ -52,14 +52,8 @@ export default function Navbar() {
       <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'border-b border-gray-100'}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-accent font-black text-xl">E</span>
-            </div>
-            <div className="leading-tight">
-              <div className="font-black text-primary text-lg tracking-tight">EkoDesign</div>
-              <div className="text-xs text-gray-400 tracking-widest uppercase">Studio</div>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src="/logo.jpg" alt="Eko Design" className="h-12 w-auto object-contain" />
           </Link>
 
           {/* Desktop nav */}
