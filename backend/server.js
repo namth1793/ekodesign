@@ -6,9 +6,12 @@ const blogRouter = require('./routes/blog');
 const portfolioRouter = require('./routes/portfolio');
 
 const app = express();
-const PORT = 5013;
+const PORT = process.env.PORT || 5013;
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*',
+  credentials: true,
+}));
 app.use(express.json());
 
 initDB();

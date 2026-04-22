@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api';
 
 export default function Portfolio() {
   const [items, setItems] = useState([]);
   const [filter, setFilter] = useState('Tất cả');
 
   useEffect(() => {
-    axios.get('/api/portfolio')
+    api.get('/api/portfolio')
       .then(r => setItems(r.data))
       .catch(() => {});
   }, []);

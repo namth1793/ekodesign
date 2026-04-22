@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import api from '../api';
 
 const SERVICES = [
   'Thiết kế Logo',
@@ -25,7 +25,7 @@ export default function LienHe() {
     setLoading(true);
     setStatus(null);
     try {
-      const r = await axios.post('/api/contacts', form);
+      const r = await api.post('/api/contacts', form);
       setStatus({ type: 'success', msg: r.data.message || 'Gửi thành công! Chúng tôi sẽ liên hệ sớm.' });
       setForm({ name: '', phone: '', email: '', service: '', message: '' });
     } catch {

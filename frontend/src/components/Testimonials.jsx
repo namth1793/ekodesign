@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../api';
 
 export default function Testimonials() {
   const [items, setItems] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    axios.get('/api/portfolio/testimonials')
+    api.get('/api/portfolio/testimonials')
       .then(r => setItems(r.data))
       .catch(() => {});
   }, []);
