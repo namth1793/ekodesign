@@ -1,20 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoTop from '../../assets/logo_top.png';
 
-const PHONE = '0964.699.499';
+const PHONE = '0877.658.973';
+const SLOGAN = 'Giải pháp xây dựng thương hiệu tổng thể cho doanh nghiệp vươn tầm';
 
 const navLinks = [
-  { label: 'Trang chủ', to: '/' },
-  { label: 'Giới thiệu', to: '/gioi-thieu' },
+  { label: 'TRANG CHỦ', to: '/' },
+  { label: 'VỀ TÔI', to: '/gioi-thieu' },
   {
-    label: 'Dịch vụ', to: '#',
+    label: 'DỊCH VỤ', to: '#',
     children: [
       { label: 'Thiết kế Logo & Thương hiệu', to: '/thiet-ke-logo' },
       { label: 'Xây dựng & Phát triển Thương hiệu', to: '/thiet-ke-thuong-hieu' },
       { label: 'Hồ sơ Năng lực & In ấn', to: '/ho-so-nang-luc' },
     ]
   },
-  { label: 'Liên hệ', to: '/lien-he' },
+  { label: 'LIÊN HỆ', to: '/lien-he' },
 ];
 
 export default function Navbar() {
@@ -38,22 +40,17 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-primary text-white text-sm hidden md:block">
         <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
-          <span>✉ info@ekodesign.vn</span>
-          <div className="flex gap-6 items-center">
-            <span>☎ Hotline tư vấn miễn phí: <a href={`tel:${PHONE}`} className="font-bold text-accent">{PHONE}</a></span>
-            <a href="/lien-he" className="bg-accent text-white px-4 py-1 rounded font-semibold hover:bg-amber-500 transition-colors">
-              Liên hệ ngay
-            </a>
-          </div>
+          <span className="italic opacity-90">{SLOGAN}</span>
+          <span>Hotline tư vấn miễn phí: <a href={`tel:${PHONE}`} className="font-bold">{PHONE}</a></span>
         </div>
       </div>
 
       {/* Main nav */}
       <header className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'border-b border-gray-100'}`}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/logo.jpg" alt="Eko Design" className="h-12 w-auto object-contain" />
+            <img src={logoTop} alt="Eko Design" className="h-16 w-auto object-contain pt-1" />
           </Link>
 
           {/* Desktop nav */}
@@ -64,8 +61,8 @@ export default function Navbar() {
                   <>
                     <button
                       onClick={() => setDropdown(dropdown === link.label ? null : link.label)}
-                      className={`px-4 py-2 rounded font-medium text-sm transition-colors flex items-center gap-1
-                        ${link.children.some(c => isActive(c.to)) ? 'text-accent' : 'text-gray-700 hover:text-accent'}`}
+                      className={`px-4 py-2 rounded font-semibold text-sm tracking-wide transition-colors flex items-center gap-1
+                        ${link.children.some(c => isActive(c.to)) ? 'text-primary' : 'text-gray-800 hover:text-primary'}`}
                     >
                       {link.label}
                       <svg className="w-3 h-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,8 +81,8 @@ export default function Navbar() {
                   </>
                 ) : (
                   <Link to={link.to}
-                    className={`px-4 py-2 rounded font-medium text-sm transition-colors
-                      ${isActive(link.to) ? 'text-accent font-semibold' : 'text-gray-700 hover:text-accent'}`}>
+                    className={`px-4 py-2 rounded font-semibold text-sm tracking-wide transition-colors
+                      ${isActive(link.to) ? 'text-primary' : 'text-gray-800 hover:text-primary'}`}>
                     {link.label}
                   </Link>
                 )}
@@ -93,14 +90,10 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
-            <a href={`tel:${PHONE}`} className="text-primary font-bold text-sm flex items-center gap-1">
-              <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
-              </svg>
-              {PHONE}
-            </a>
-            <Link to="/lien-he" className="btn-primary text-sm">Tư vấn miễn phí</Link>
+          <div className="hidden lg:flex items-center">
+            <Link to="/lien-he" className="bg-primary text-white text-sm font-bold px-6 py-2.5 rounded hover:bg-blue-900 transition-colors tracking-wide">
+              TƯ VẤN MIỄN PHÍ
+            </Link>
           </div>
 
           {/* Mobile toggle */}

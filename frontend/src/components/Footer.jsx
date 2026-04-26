@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logoBot from '../../assets/logo_bot.png';
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <img src="/logo.jpg" alt="Eko Design" className="h-14 w-auto object-contain rounded-lg" />
+              <img src={logoBot} alt="Eko Design" className="h-14 w-auto object-contain" />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
               Dịch vụ xây dựng & phát triển thương hiệu – Thiết kế logo & thương hiệu – Thiết kế & in ấn hồ sơ năng lực chuyên nghiệp.

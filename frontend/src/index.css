@@ -34,6 +34,16 @@ body {
 .slide-enter { opacity: 0; transform: translateX(40px); }
 .slide-active { opacity: 1; transform: translateX(0); transition: all 0.6s ease; }
 
+/* Infinite scroll carousels */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f1f1f1; }
