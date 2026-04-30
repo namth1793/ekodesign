@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api';
 
@@ -32,33 +32,12 @@ export default function DuAn() {
       <section className="bg-primary text-white py-20 text-center">
         <div className="max-w-3xl mx-auto px-6">
           <span className="text-accent font-semibold text-sm uppercase tracking-widest">Portfolio</span>
-          <h1 className="text-4xl md:text-5xl font-black mt-3 mb-4">Dự Án Của Chúng Tôi</h1>
+          <h1 className="text-3xl md:text-4xl font-black mt-3 mb-4">Dự Án Của Chúng Tôi</h1>
           <p className="text-white/70 text-lg">
             Tổng hợp các dự án thiết kế thương hiệu, logo và nhận diện doanh nghiệp mà EkoDesign đã thực hiện.
           </p>
         </div>
       </section>
-
-      {/* Filter tabs */}
-      <div className="bg-white border-b border-gray-100 sticky top-0 z-10 shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex gap-2 flex-wrap">
-            {INDUSTRIES.map(ind => (
-              <button
-                key={ind}
-                onClick={() => handleFilter(ind)}
-                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
-                  active === ind
-                    ? 'bg-primary text-white'
-                    : 'bg-light text-gray-600 hover:text-primary border border-gray-200'
-                }`}
-              >
-                {ind}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Grid */}
       <section className="py-14 bg-white">
