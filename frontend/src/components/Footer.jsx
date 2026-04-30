@@ -49,6 +49,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-white/60">
               {[
                 ['Giới thiệu về Eko', '/gioi-thieu'],
+                ['Dự án thực hiện', '/du-an'],
                 ['Bảng giá dịch vụ', '/thiet-ke-logo'],
                 ['Liên hệ tư vấn', '/lien-he'],
               ].map(([label, to]) => (
@@ -64,10 +65,10 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4 uppercase tracking-wide text-sm">Liên hệ</h4>
             <ul className="space-y-3 text-sm text-white/60">
               <li>
-                <a href="tel:0964699499" className="hover:text-accent transition-colors">📞 0964.699.499</a>
+                <a href="tel:0877658973" className="hover:text-accent transition-colors">📞 0877.658.973</a>
               </li>
               <li>
-                <a href="mailto:info@eko.vn" className="hover:text-accent transition-colors">✉ info@eko.vn</a>
+                <a href="mailto:ekoagency3@gmail.com" className="hover:text-accent transition-colors">✉ ekoagency3@gmail.com</a>
               </li>
               <li className="leading-relaxed">
                 📍 Hà Nội & TP. Hồ Chí Minh

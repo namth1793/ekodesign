@@ -16,6 +16,7 @@ const navLinks = [
       { label: 'Hồ sơ Năng lực & In ấn', to: '/ho-so-nang-luc' },
     ]
   },
+  { label: 'DỰ ÁN', to: '/du-an' },
   { label: 'LIÊN HỆ', to: '/lien-he' },
 ];
 

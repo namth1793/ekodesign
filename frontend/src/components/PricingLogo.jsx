@@ -95,28 +95,35 @@ export default function PricingLogo() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {plans.map((plan, i) => (
-            <div key={i} className="relative flex rounded-xl overflow-hidden border border-white/20 bg-white/5 hover:bg-white/10 transition-colors duration-300">
-              {/* Arrow indicator */}
-              <div className="flex items-center pl-3 pr-1 text-white/40 text-lg select-none">◄</div>
+            <div
+              key={i}
+              className="relative flex rounded-xl overflow-hidden border border-white/20 bg-white/5 hover:bg-white/10 transition-colors duration-300"
+              style={{ borderTop: `3px solid ${plan.badgeColor}` }}
+            >
+              {/* Arrow indicator – desktop only */}
+              <div className="hidden md:flex items-center pl-3 pr-1 text-white/40 text-lg select-none">◄</div>
 
               {/* Card content */}
-              <div className="flex-1 p-5 pr-20">
+              <div className="flex-1 p-4 md:p-5 md:pr-20">
                 {/* Header */}
-                <div className="flex items-start justify-between mb-1">
-                  <div>
-                    <p className="text-white/50 text-xs font-semibold tracking-widest">{plan.index} &nbsp; {plan.tier}</p>
-                    <h3 className="text-white text-2xl font-black tracking-wide mt-0.5">{plan.name} <span className="font-normal">( {plan.code} )</span></h3>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-white/40 text-sm line-through">{plan.originalPrice}</p>
-                    <p className="text-white text-3xl font-black leading-tight">{plan.salePrice}</p>
+                <div className="mb-2">
+                  <p className="text-white/50 text-xs font-semibold tracking-widest">{plan.index} &nbsp; {plan.tier}</p>
+                  <div className="flex items-end justify-between gap-2 mt-1">
+                    <h3 className="text-white text-xl md:text-2xl font-black tracking-wide leading-tight">
+                      {plan.name}
+                      <span className="font-normal text-base md:text-lg"> ({plan.code})</span>
+                    </h3>
+                    <div className="text-right flex-shrink-0">
+                      <p className="text-white/40 text-xs line-through">{plan.originalPrice}đ</p>
+                      <p className="text-accent text-xl md:text-3xl font-black leading-tight">{plan.salePrice}đ</p>
+                    </div>
                   </div>
                 </div>
 
-                <p className="text-white/60 text-xs mb-4 leading-relaxed">{plan.desc}</p>
+                <p className="text-white/60 text-xs mb-3 leading-relaxed">{plan.desc}</p>
 
-                <div className="mb-4">
-                  <p className="text-white/70 text-xs font-bold mb-2">Hạng mục chính</p>
+                <div className="mb-3">
+                  <p className="text-white/70 text-xs font-bold mb-1.5">Hạng mục chính</p>
                   <ul className="space-y-1">
                     {plan.features.map((f, j) => (
                       <li key={j} className="text-white/80 text-xs flex gap-1.5">
@@ -127,12 +134,14 @@ export default function PricingLogo() {
                   </ul>
                 </div>
 
-                <p className="text-white/50 text-xs italic">Thời gian thực hiện: <span className="text-white/80 not-italic font-semibold">{plan.duration}</span></p>
+                <p className="text-white/50 text-xs italic">
+                  Thời gian: <span className="text-white/80 not-italic font-semibold">{plan.duration}</span>
+                </p>
               </div>
 
-              {/* Badge letter */}
+              {/* Badge letter – desktop only */}
               <div
-                className="absolute bottom-0 right-0 w-16 h-16 flex items-center justify-center rounded-tl-2xl"
+                className="hidden md:flex absolute bottom-0 right-0 w-16 h-16 items-center justify-center rounded-tl-2xl"
                 style={{ backgroundColor: plan.badgeColor }}
               >
                 <span className="text-white text-3xl font-black">{plan.code}</span>

@@ -57,8 +57,8 @@ export default function LienHe() {
                 <h2 className="text-2xl font-black text-primary mb-6">Thông Tin Liên Hệ</h2>
                 <div className="space-y-5">
                   {[
-                    { icon: '📞', label: 'Hotline tư vấn', val: '0964.699.499', link: 'tel:0964699499' },
-                    { icon: '✉️', label: 'Email', val: 'info@ekodesign.vn', link: 'mailto:info@ekodesign.vn' },
+                    { icon: '📞', label: 'Hotline tư vấn', val: '0877.658.973', link: 'tel:0877658973' },
+                    { icon: '✉️', label: 'Email', val: 'ekoagency3@gmail.com', link: 'mailto:ekoagency3@gmail.com' },
                     { icon: '🕐', label: 'Giờ làm việc', val: 'Thứ 2 – Thứ 7: 8:00 – 18:00' },
                   ].map(item => (
                     <div key={item.label} className="flex gap-4 items-start">

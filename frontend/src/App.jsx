@@ -8,6 +8,9 @@ import ThietKeLogo from './pages/ThietKeLogo';
 import ThietKeThuongHieu from './pages/ThietKeThuongHieu';
 import HoSoNangLuc from './pages/HoSoNangLuc';
 import LienHe from './pages/LienHe';
+import DuAn from './pages/DuAn';
+import DuAnDetail from './pages/DuAnDetail';
+import FloatingContact from './components/FloatingContact';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,8 +30,11 @@ export default function App() {
         <Route path="/thiet-ke-thuong-hieu" element={<ThietKeThuongHieu />} />
         <Route path="/ho-so-nang-luc" element={<HoSoNangLuc />} />
         <Route path="/lien-he" element={<LienHe />} />
+        <Route path="/du-an" element={<DuAn />} />
+        <Route path="/du-an/:id" element={<DuAnDetail />} />
       </Routes>
       <Footer />
+      <FloatingContact />
     </BrowserRouter>
   );
 }
