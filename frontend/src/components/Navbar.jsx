@@ -51,7 +51,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoTop} alt="Eko Design" className="h-16 w-auto object-contain pt-1" />
+            <img src={logoTop} alt="Eko Design" className="h-14 w-auto object-contain pt-1" />
           </Link>
 
           {/* Desktop nav */}

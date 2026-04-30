@@ -11,7 +11,7 @@ export default function ContactCTA() {
         <span className="inline-block bg-accent/20 border border-accent/30 text-accent text-sm font-bold px-4 py-1.5 rounded-full mb-5 uppercase tracking-widest">
           Bắt đầu ngay hôm nay
         </span>
-        <h2 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
+        <h2 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
           Sẵn Sàng Xây Dựng<br/>
           <span className="text-accent">Thương Hiệu Của Bạn?</span>
         </h2>
